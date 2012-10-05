@@ -35,6 +35,14 @@ Functionality
   position: relative;
 }
 /* Dropdown */
+#nav > li:hover ul {
+  top: 35px;
+  opacity: 1;
+  -webkit-transition-delay: 0, 0;
+  -moz-transition-delay: 0, 0;
+  -o-transition-delay: 0, 0;
+  transition-delay: 0, 0;
+}
 #nav ul {
   width: 140px;
   padding: 8px 0;
@@ -57,14 +65,6 @@ Functionality
   -moz-transition-delay: 0, .2s;
   -o-transition-delay: 0, .2s;
   transition-delay: 0, .2s;
-}
-#nav > li:hover ul {
-  top: 35px;
-  opacity: 1;
-  -webkit-transition-delay: 0, 0;
-  -moz-transition-delay: 0, 0;
-  -o-transition-delay: 0, 0;
-  transition-delay: 0, 0;
 }
 
 /********************************

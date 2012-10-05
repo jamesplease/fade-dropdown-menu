@@ -17,8 +17,12 @@ All you need to do is make sure that the submenu ULs have a higher z-index than 
 
 	#nav ul { z-index: 1000; }
 
-### IE Compatibility
+### Compatibility
 
-In the form it's given in, this will only display properly on IE8+ (as long as you declare a doctype, which you should, anyway).
+This will function in all browsers IE6+, but not every browser can handle the transitions.
 
-If you remove the CSS arrows, this will work on IE6+.
+The fading effect currently does not work in Firefox (as of 15.0.1).
+
+None of the transitions work in Internet Explorer.
+
+The CSS3 arrows will display in IE8+ as long as you declare a doctype (which you should always do, anyway). If you remove the CSS arrows, it will display properly in IE6+ (aside from the transitions).
