@@ -1,11 +1,9 @@
-CSS Dropdown 1
+CSS3 Dropdown with Fade
 ========================
 
-This is the first of a few CSS dropdown menus I've made. It's semantic, entirely CSS, and has some neat features like fade in and out. To view it live, head over to
+This is the first of a few CSS dropdown menus I've made. It's semantic, entirely CSS, and has a nice fade effect. [View it live.][sbc]
 
-[http://sbc.swarthmore.edu][sbc]
-
-[sbc]: http://sbc.swarthmore.edu/  "Student Groups of Swarthmore College"
+[sbc]: http://jmeas.com/projects/git/dd1/menu.html  "CSS3 Dropdown with Fade"
 
 ### Usage
 
