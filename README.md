@@ -19,7 +19,7 @@ All you need to do is make sure that the submenu ULs have a higher z-index than 
 
 ### Compatibility
 
-100% compatible with Chrome, Safari, Opera, and Firefox. Note that a strange difference in CSS is needed for the fade to work with Firefox. You can see it in the CSS file.
+100% compatible with Chrome, Safari, Opera, and Firefox. Note that a little nuance in the CSS is needed for the fade to work with Firefox. You can see it in the CSS file.
 
 This will function on IE6+, but there are display issues.
 
