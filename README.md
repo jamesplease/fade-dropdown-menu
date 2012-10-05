@@ -13,7 +13,9 @@ This dropdown menu is [semantic][sem] & entirely CSS3.
 ### Usage
 
 A common usage would be having the dropdown appear over other elements on your site. The example given here doesn't technically include this, but it isn't hard to add.
-All you need to do is make sure that the submenu ULs have a higher z-index than the element you want it appear over. If you want it to be above everything else on your page, simply give the submenu ULs a z-index of, say, 1000.
+All you need to do is make sure that the submenu ULs have a higher z-index than the element you want it appear over. If you want it to be above everything else on your page, simply give the submenu ULs a z-index of, say, 1000. It might look something like this:
+
+	#nav ul { z-index: 1000; }
 
 ### IE Compatibility
 
