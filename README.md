@@ -9,5 +9,7 @@ This is the first of a few CSS dropdown menus I've made. It's semantic and entir
 
 ### Compatibility
 
-In the form it's given in, this will only work properly on IE9+
+In the form it's given in, this will only work properly on IE8+ (so long as you declare a doctype, which you should, anyway)
+
+If you remove the CSS arrows, this will work on IE6+
 
