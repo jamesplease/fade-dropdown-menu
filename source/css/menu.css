@@ -46,13 +46,25 @@ Functionality
   border-radius: 2px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);;
   -webkit-transition-property: opacity, top;
+  -moz-transition-property: opacity, top;
+  -o-transition-property: opacity, top;
+  transition-property: opacity, top;
   -webkit-transition-duration: .2s, 0;
+  -moz-transition-duration: border .2s, 0;
+  -o-transition-duration: border .2s, 0;
+  transition-duration: border .2s, 0;
   -webkit-transition-delay: 0, .2s;
+  -moz-transition-delay: 0, .2s;
+  -o-transition-delay: 0, .2s;
+  transition-delay: 0, .2s;
 }
 #nav > li:hover ul {
   top: 35px;
   opacity: 1;
   -webkit-transition-delay: 0, 0;
+  -moz-transition-delay: 0, 0;
+  -o-transition-delay: 0, 0;
+  transition-delay: 0, 0;
 }
 
 /********************************

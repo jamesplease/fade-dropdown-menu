@@ -1,7 +1,7 @@
 CSS Dropdown 1
 ========================
 
-This is the first of a few CSS dropdown menus I've made. It's semantic and entirely CSS, and chock full of features like a fade in and out. To view it live, head over to
+This is the first of a few CSS dropdown menus I've made. It's semantic and entirely CSS, and chock-full of features like a fade in and out. To view it live, head over to
 
 [http://sbc.swarthmore.edu][sbc]
 
