@@ -1,7 +1,7 @@
 CSS3 Dropdown with Fade
 ========================
 
-In the past, dropdown menus were only possible through Javascript. Now, we can use CSS3 to achieve pretty much every traditional dropdown effects.
+In the past, dropdown menus were only possible through Javascript. Nowadays we can use CSS3 to achieve pretty much every traditional dropdown effect.
 
 This dropdown menu is [semantic][sem] & entirely CSS3.
 
