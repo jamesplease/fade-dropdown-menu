@@ -50,9 +50,9 @@ Functionality
   -o-transition-property: opacity, top;
   transition-property: opacity, top;
   -webkit-transition-duration: .2s, 0;
-  -moz-transition-duration: border .2s, 0;
-  -o-transition-duration: border .2s, 0;
-  transition-duration: border .2s, 0;
+  -moz-transition-duration: .2s, 0;
+  -o-transition-duration: .2s, 0;
+  transition-duration: .2s, 0;
   -webkit-transition-delay: 0, .2s;
   -moz-transition-delay: 0, .2s;
   -o-transition-delay: 0, .2s;
