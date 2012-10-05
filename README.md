@@ -1,12 +1,13 @@
 CSS3 Dropdown with Fade
 ========================
 
-In the past, dropdown menus were only able to be made with Javascript. With CSS3, we can replace all of the JS with CSS and get the same effects.
+In the past, dropdown menus were only possible through Javascript. But now we can just use CSS3 to achieve all of those great dropdown effects.
 
-This dropdown is semantic, entirely CSS, and has a fade effect.
+This dropdown menu is [semantic][sem] & entirely CSS.
 
 [View it live.][sbc]
 
+[sem]: http://en.wikipedia.org/wiki/Semantic_Web "Semantic Web"
 [sbc]: http://jmeas.com/projects/git/dd1/menu.html  "CSS3 Dropdown with Fade"
 
 ### Usage
