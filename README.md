@@ -12,17 +12,19 @@ This dropdown menu is [semantic][sem] & entirely CSS3.
 
 ### Usage
 
-A common usage would be having the dropdown appear over other elements on your site. The example given here doesn't technically include this, but it isn't hard to add.
+Typical usage would involve having the dropdown appear over other elements on your site. The example given here doesn't include this, but it isn't hard to add.
 All you need to do is make sure that the submenu ULs have a higher z-index than the element you want it appear over. If you want it to be above everything else on your page, simply give the submenu ULs a z-index of, say, 1000. It might look something like this:
 
 	#nav ul { z-index: 1000; }
 
 ### Compatibility
 
-This will function in all browsers IE6+, but not every browser can handle the transitions.
+100% compatible with Chrome, Safari, Opera, and Firefox. Note that a special hack is needed for the fade to work with Firefox. You can see it in the CSS file.
 
-The fading effect currently does not work in Firefox (as of 15.0.1).
+This will function on IE6+, but there are display issues.
 
-None of the transitions work in Internet Explorer.
+Firstly, none of the transitions work in Internet Explorer, up to IE9 (which does support transitions of any sort. This isn't unique to this dropdown).
 
-The CSS3 arrows will display in IE8+ as long as you declare a doctype (which you should always do, anyway). If you remove the CSS arrows, it will display properly in IE6+ (aside from the transitions).
+Secondly, he CSS3 arrows will display in IE8+ as long as you declare a doctype (which you should always do, anyway). If you remove the CSS arrows, it will otherwise display properly in IE6+ (aside from the transitions).
+
+Enjoy!
