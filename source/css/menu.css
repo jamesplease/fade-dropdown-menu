@@ -59,7 +59,7 @@ Functionality
  ********************************/
 
 /* This is the arrow's grey border */
-#nav ul::before {
+#nav ul:before {
 	position: absolute;
 	top: -7px;
 	left: 55px;
@@ -70,7 +70,7 @@ Functionality
 	content: '';
 }
 /* This is the white fill of the arrow */
-#nav ul::after {
+#nav ul:after {
 	position: absolute;
 	top: -6px;
 	left: 56px;

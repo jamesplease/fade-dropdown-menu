@@ -6,3 +6,8 @@ This is the first of a few CSS dropdown menus I've made. It's semantic and entir
 [http://sbc.swarthmore.edu][sbc]
 
 [sbc]: http://sbc.swarthmore.edu/  "Student Groups of Swarthmore College"
+
+### Compatibility
+
+In the form it's given in, this will only work properly on IE9+
+
