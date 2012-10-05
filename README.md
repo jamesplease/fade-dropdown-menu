@@ -23,8 +23,8 @@ All you need to do is make sure that the submenu ULs have a higher z-index than 
 
 This will function on IE6+, but there are display issues.
 
-Firstly, none of the transitions work in Internet Explorer, up to IE9 (which does support transitions of any sort. This isn't unique to this dropdown).
+Firstly, none of the transitions work in Internet Explorer, up to IE9 (remember, IE doesn't yet support transitions of any sort. This incompatibility isn't unique to this dropdown).
 
-Secondly, he CSS3 arrows will display in IE8+ as long as you declare a doctype (which you should always do, anyway). If you remove the CSS arrows, it will otherwise display properly in IE6+ (aside from the transitions).
+Secondly, the CSS3 arrows will display in IE8+ so long as you declare a doctype (which you should always do, anyway). If you remove the CSS arrows, it will otherwise display correctly in IE6+ (aside from the transitions).
 
 Enjoy!
