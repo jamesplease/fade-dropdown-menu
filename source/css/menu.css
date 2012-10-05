@@ -3,6 +3,18 @@
 body { margin: 0; padding: 0; }
 ul { list-style: none; }
 
+
+/*****************************************************
+
+NOTE:
+Firefox doesn't accept a value of '0' without the unit.
+Accordingly, I've included the units for all -moz transitions.
+
+
+*****************************************************/
+
+
+
 /****************************
 Styling
 *****************************/
@@ -39,41 +51,34 @@ Functionality
   top: 35px;
   opacity: 1;
   -webkit-transition-delay: 0, 0;
+  -moz-transition-delay: 0s, 0s;
   -o-transition-delay: 0, 0;
   transition-delay: 0, 0;
-
-  /* Firefox hack */
-  -moz-transition-property: top, opacity;
-  -moz-transition-duration: .0001s, .2s;
-  -moz-transition-delay: 0s, 0s;
 }
 #nav ul {
   width: 140px;
   padding: 8px 0;
   position: absolute;
-  /*top: -1000px;*/
-  top: 15px;
+  top: -1000px;
   left: -35px;
   opacity: 0;
   border: 1px solid #aaa;
   border-radius: 2px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
   -webkit-transition-property: opacity, top;
+  -moz-transition-property: opacity, top;
   -o-transition-property: opacity, top;
   transition-property: opacity, top;
 
   -webkit-transition-duration: .2s, 0;
+  -moz-transition-duration: .2s, 0s;
   -o-transition-duration: .2s, 0;
   transition-duration: .2s, 0;
 
   -webkit-transition-delay: 0, .2s;
+  -moz-transition-delay: 0s, .2s;
   -o-transition-delay: 0, .2s;
   transition-delay: 0, .2s;
-
-  /* Firefox hack */
-  -moz-transition-property: top, opacity;
-  -moz-transition-duration: .0001s, .2s;
-  -moz-transition-delay: .2s, 0s;
 }
 
 /********************************
@@ -100,6 +105,7 @@ Functionality
   border-right: 6px solid transparent;
   border-bottom: 6px solid white;
   border-left: 6px solid transparent;
+  box-shadow: 0 0;
   content: '';
 }
 
