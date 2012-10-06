@@ -22,14 +22,14 @@ It also works just as it should on iOS devices, like iPhones and iPads.
 
 This will function on IE6+, but it won't display as nicely in IE as in those other browsers.
 
-Firstly, none of the transitions work in Internet Explorer, even IE9 (remember, IE doesn't yet support transitions of any sort. This incompatibility isn't unique to this dropdown).
+Firstly, none of the transitions work in Internet Explorer, even IE9 (remember, IE doesn't support transitions of any sort. This incompatibility isn't unique to this dropdown).
 
-Secondly, the CSS3 arrows will only display in IE8+. This is for a few reasons. Firstly, we use a CSS unicode character that I don't think is supported pre-IE8. We also use the ::after pseudoelement to display the triangle; again, IE8+. And, finally, we're transforming the arrow, which, yet again, is only IE8+.
+Secondly, the CSS3 arrows will only display in IE8+. This is for a few reasons. Firstly, we use a CSS unicode character that I don't think is supported pre-IE8. We also use the ::after pseudoelement to display the triangle; again, IE8+. And we're transforming the arrow, which, yet again, is only IE8+.
 
 If you remove those pesky CSS arrows, it will otherwise display correctly in IE6+ (aside from the transitions).
 
 ### Technical details
 
-I used a unicode character for the triangle instead of CSS borders. You might be wondering why this is. In Firefox, the border hack for CSS triangles displays black bars along the edges of the triangle when it isn't displayed at 1 opacity. These aren't there when it's viewed at 1 opacity, so you never notice in typical usage. But, since this has a fade...yeah. You get the picture.
+I used a unicode character for the triangle instead of CSS borders. You might be wondering why this is. In Firefox, the border hack for CSS triangles displays black bars along the edges of the triangle when it isn't entirely opaque. These aren't there when it's viewed at 1 opacity, so you never notice in typical usage. But, since this has a fade...yeah. You get the picture.
 
 Enjoy!
