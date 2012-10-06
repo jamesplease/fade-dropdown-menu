@@ -10,15 +10,11 @@ This dropdown menu is [semantic][sem] & entirely CSS3.
 [sem]: http://en.wikipedia.org/wiki/Semantic_Web "Semantic Web"
 [sbc]: http://jmeas.com/projects/git/dd1/menu.html  "CSS3 Dropdown with Fade"
 
-### Usage
-
-Typical usage would involve having the dropdown appear over other elements on your site. This example incorporates that by giving the dropdown menu a high z-index, 1000. As long as everything on your page is below that (which it probably is), then you're fine.
-
 ### Compatibility
 
-This is 100% compatible with Chrome, Safari, Opera, and Firefox. Note that a little nuance in the CSS is needed for the fade to work with Firefox. It's noted in the CSS file.
+This is 100% compatible with Chrome, Safari, Opera, and Firefox. Note that a little nuance in the CSS is needed for the fade to work with Firefox. It's noted in the CSS file. I also included the [iOS :hover double-click feature][click].
 
-It also works just as it should on iOS devices, like iPhones and iPads.
+[click]: http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/ "iOS Double Click"
 
 This will function on IE6+, but it won't display as nicely in IE as in those other browsers.
 
