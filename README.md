@@ -22,6 +22,12 @@ This will function on IE6+, but it won't display as nicely in IE as in those oth
 
 Firstly, none of the transitions work in Internet Explorer, even IE9 (remember, IE doesn't yet support transitions of any sort. This incompatibility isn't unique to this dropdown).
 
-Secondly, the CSS3 arrows will display in IE8+ so long as you declare a doctype (which you should always do, anyway). If you remove the CSS arrows, it will otherwise display correctly in IE6+ (aside from the transitions).
+Secondly, the CSS3 arrows will display in IE8+ so long as you declare a doctype (which you should always do, anyway). This is for a few reasons. Firstly, we use a CSS unicode character that I don't think is supported pre-IE8. We also use the ::after pseudoelement to display the triangle. And finally we're transforming the arrow, which, yet again, is just IE8+.
+
+If you remove those pesky CSS arrows, it will otherwise display correctly in IE6+ (aside from the transitions).
+
+### Technical details
+
+I used a unicode character for the triangle instead of CSS borders. You might be wondering why this is. In Firefox, the border hack for CSS triangles adds black bars to the edges of the triangle when it isn't displayed at 1 opacity. These aren't there when it's viewed at 1 opacity, so you never notice in typical usage. But, since this has a fade...yeah. You get the picture.
 
 Enjoy!
