@@ -18,6 +18,8 @@ Typical usage would involve having the dropdown appear over other elements on yo
 
 This is 100% compatible with Chrome, Safari, Opera, and Firefox. Note that a little nuance in the CSS is needed for the fade to work with Firefox. It's noted in the CSS file.
 
+It also works just as it should on iOS devices, like iPhones and iPads.
+
 This will function on IE6+, but it won't display as nicely in IE as in those other browsers.
 
 Firstly, none of the transitions work in Internet Explorer, even IE9 (remember, IE doesn't yet support transitions of any sort. This incompatibility isn't unique to this dropdown).
