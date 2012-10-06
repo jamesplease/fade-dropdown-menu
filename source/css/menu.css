@@ -6,10 +6,8 @@ ul { list-style: none; }
 
 /*****************************************************
 
-NOTE:
 Firefox doesn't accept a value of '0' without the unit.
 Accordingly, I've included the units for all -moz transitions.
-
 
 *****************************************************/
 
@@ -56,6 +54,7 @@ Functionality
   transition-delay: 0, 0;
 }
 #nav ul {
+  z-index: 1000;
   width: 140px;
   padding: 8px 0;
   position: absolute;
@@ -82,31 +81,23 @@ Functionality
 }
 
 /********************************
- The dropdown arrow & its border
+ The dropdown arrow
  ********************************/
 
-/* This is the arrow's grey border */
-#nav ul:before {
-  position: absolute;
-  top: -7px;
-  left: 55px;
-  display: inline-block;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #999;
-  border-left: 7px solid transparent;
-  content: '';
-}
-/* This is the white fill of the arrow */
 #nav ul:after {
+  z-index: 1001;
   position: absolute;
-  top: -6px;
+  top: -12px;
   left: 56px;
-  display: inline-block;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid white;
-  border-left: 6px solid transparent;
-  box-shadow: 0 0;
-  content: '';
+  text-shadow: 0px -1px 0 #999;
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  content: '▲';
+  color: #fff;
+  -webkit-transform: scaleX(1.7);
+  -moz-transform: scaleX(1.7);
+  -o-transform: scaleX(1.7);
+  transform: scaleX(1.7);
 }
 
 /**************************
