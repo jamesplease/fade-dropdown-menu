@@ -21,13 +21,15 @@ This is 100% compatible with Chrome, Safari, Opera, and Firefox. I also optimize
 
 [click]: http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/ "iOS Double Click"
 
-This styled version will still function on IE6+, but it won't display as nicely in IE as in those other browsers for a few reasons.
+The styled version will still function on IE6+, but it won't display as nicely as in those other browsers. This is for a few reasons.
 
-Firstly, none of the transitions work in Internet Explorer, even IE9 (remember, IE doesn't support transitions of any sort. This incompatibility isn't unique to this dropdown).
+Firstly, CSS transitions are only supported in IE10.
 
 Secondly, the CSS3 arrows will only display in IE8+. This is for a few reasons. Firstly, we use a CSS unicode character that I don't think is supported pre-IE8. We also use the ::after pseudoelement to display the triangle; again, IE8+. And we're transforming the arrow, which, yet again, is only IE8+.
 
-If you remove those pesky CSS arrows, it will otherwise display correctly in IE6+ (aside from the transitions). And the plain version is IE6+ compatible, save the transitions.
+If you remove those pesky CSS arrows, it will otherwise display correctly in IE6+ (aside from the transitions).
+
+And, for the record, the plain version is IE6+ compatible, save the transitions.
 
 ### Technical details
 
