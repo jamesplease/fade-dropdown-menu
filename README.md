@@ -12,11 +12,11 @@ This dropdown menu is [semantic][sem] & entirely CSS3.
 
 ### Compatibility
 
-This is 100% compatible with Chrome, Safari, Opera, and Firefox. Note that a little nuance in the CSS is needed for the fade to work with Firefox. It's noted in the CSS file. I also included the [iOS :hover double-click feature][click].
+This is 100% compatible with Chrome, Safari, Opera, and Firefox. I also optimized it for use on iOS by adding utilizing the [double-click feature][click].
 
 [click]: http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/ "iOS Double Click"
 
-This will function on IE6+, but it won't display as nicely in IE as in those other browsers.
+This will function on IE6+, but it won't display as nicely in IE as in those other browsers for a few reasons.
 
 Firstly, none of the transitions work in Internet Explorer, even IE9 (remember, IE doesn't support transitions of any sort. This incompatibility isn't unique to this dropdown).
 
