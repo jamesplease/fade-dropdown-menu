@@ -13,7 +13,7 @@ There are two versions in this Git. There's one with style and one that's pure f
 
 [sem]: http://en.wikipedia.org/wiki/Semantic_Web "Semantic Web"
 [style]: http://jmeas.com/projects/git/dd1/style/menu.html  "CSS3 Dropdown with Fade, Styled"
-[plain]]: http://jmeas.com/projects/git/dd1/plain/menu.html  "CSS3 Dropdown with Fade, Plain"
+[plain]: http://jmeas.com/projects/git/dd1/plain/menu.html  "CSS3 Dropdown with Fade, Plain"
 
 ### Compatibility
 
