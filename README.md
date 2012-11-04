@@ -5,7 +5,7 @@ In the past, dropdown menus were only possible through Javascript. Nowadays we c
 
 This dropdown menu is [semantic][sem] & entirely CSS3.
 
-There are two versions in this Git. There's one with style and one that's pure function, so you can more easily apply your own styling. These are contained in 'styled-source' and 'plain-source,' respectively.
+There are two versions in this Git. There's one with style and one that's styleless. These are contained in 'styled-source' and 'plain-source,' respectively.
 
 [View it live & with styling.][style]
 
