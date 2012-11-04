@@ -5,10 +5,15 @@ In the past, dropdown menus were only possible through Javascript. Nowadays we c
 
 This dropdown menu is [semantic][sem] & entirely CSS3.
 
-[View it live.][sbc]
+There are two versions in this Git. There's one with style version and one without any styling at all. These are contained in 'styled-source' and 'plain-source,' respectively
+
+[View it live, with styling.][style]
+
+[View it live, without styling (the 'simple' version).][plain]
 
 [sem]: http://en.wikipedia.org/wiki/Semantic_Web "Semantic Web"
-[sbc]: http://jmeas.com/projects/git/dd1/menu.html  "CSS3 Dropdown with Fade"
+[style]: http://jmeas.com/projects/git/dd1/style/menu.html  "CSS3 Dropdown with Fade, Styled"
+[style]: http://jmeas.com/projects/git/dd1/plain/menu.html  "CSS3 Dropdown with Fade, Plain"
 
 ### Compatibility
 

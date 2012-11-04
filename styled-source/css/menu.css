@@ -54,7 +54,7 @@ Functionality
 }
 #nav ul {
   visibility: hidden;
-  z-index: 1000;
+  z-index: 1;
   width: 140px;
   padding: 8px 0;
   position: absolute;
@@ -86,7 +86,6 @@ Functionality
  ********************************/
 
 #nav ul:after {
-  z-index: 1001;
   position: absolute;
   top: -10px;
   left: 56px;
@@ -111,13 +110,13 @@ Functionality
   -o-transition: border .25s;
   transition: border .25s;
 }
-#nav1 { border-bottom: 3px solid #e03858; }
-#nav2 { border-bottom: 0px solid #ef7c28; }
-#nav3 { border-bottom: 0px solid #31aa34; }
-#nav4 { border-bottom: 0px solid #28a6c6; }
-#nav5 { border-bottom: 0px solid #854db5; }
-#nav > li:hover #nav1 { border-bottom: 3px solid #e03858; }
-#nav > li:hover #nav2 { border-bottom: 3px solid #ef7c28; }
-#nav > li:hover #nav3 { border-bottom: 3px solid #31aa34; }
-#nav > li:hover #nav4 { border-bottom: 3px solid #28a6c6; }
-#nav > li:hover #nav5 { border-bottom: 3px solid #854db5; }
+#nav-item1 { border-bottom: 3px solid #e03858; }
+#nav-item2 { border-bottom: 0px solid #ef7c28; }
+#nav-item3 { border-bottom: 0px solid #31aa34; }
+#nav-item4 { border-bottom: 0px solid #28a6c6; }
+#nav-item5 { border-bottom: 0px solid #854db5; }
+#nav > li:hover #nav-item1 { border-bottom: 3px solid #e03858; }
+#nav > li:hover #nav-item2 { border-bottom: 3px solid #ef7c28; }
+#nav > li:hover #nav-item3 { border-bottom: 3px solid #31aa34; }
+#nav > li:hover #nav-item4 { border-bottom: 3px solid #28a6c6; }
+#nav > li:hover #nav-item5 { border-bottom: 3px solid #854db5; }
