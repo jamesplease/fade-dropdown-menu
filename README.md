@@ -1,6 +1,6 @@
 CSS3 Dropdown with Fade
 ========================
-*Version 2.0.0*
+*Version 2.1.0*
 
 This is a one-tier dropdown menu with a fade effect. It was built with the [semantic web][sem] in mind, and happens to be Javascript-free.
 
@@ -18,6 +18,35 @@ The source is available in both LESS and CSS.
 
 *Note: Though this menu can be made to work with IE7+, the above examples will only display properly in IE9+. Read below for more.*
 
+### Usage
+
+Set the `fade-menu` class on an unordered list element.
+
+	<ul class='fade-menu'></ul>
+	
+The headers of the menu are the immediate children `li` of the menu.
+
+	<ul class='fade-menu'>
+	  <li>Here's a header</li>
+	  <li>And one more header</li>
+	</ul>
+	
+To make a sub menu that fades in, add a `ul` child to the menu headers.
+
+	<ul class='fade-menu'>
+	  <li>
+	    Header text
+	    <ul>
+	      <li>First sub menu item</li>
+	      <li>Second sub menu item</li>
+	    </ul>
+	  </li>
+	</ul>
+
+And that should do it.
+
+*Note: The `fade-menu` list has 0 height because its children are set to `float: left;`. This project doesn't have a clearfix solution included with it, so be sure to clearfix the menu or otherwise explicitly set the height on a parent element.*
+
 ### Compatibility
 
 As you'd expect, you'll find no issues with this menu in the latest version of all of the major browsers. It was also optimized for use on iOS and the most popular Android phones (it probably works fine on other Android phones &ndash; I just didn't check!).
@@ -30,7 +59,7 @@ Once you've done either of those, the menu will still *function* as far back as 
 
 If you'd prefer to have better support on these IEs you will need to turn to Javascript.
 
-### 2.0.0 Notes
+### v2.0.0+ Notes
 
 Versions 1.x of this menu used a unicode character for the triangle that sits atop the dropdown items. I added this due to a bug in Firefox, but the bug has since been fixed. Accordingly, I've switched over to using CSS borders for the triangles. This has the effect of making the menu look nicer in IE8. Great!
 

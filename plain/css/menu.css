@@ -1,23 +1,22 @@
-/* The body styling isn't really necessary */
 body {
   margin: 0 0 0 50px;
   padding: 0;
   width: 850px;
 }
-/* All of the styling is 'scoped' within the nav ul element */
-nav ul {
+ul.fade-menu,
+.fade-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-nav ul a {
+.fade-menu a {
   display: block;
 }
-nav ul > li {
+.fade-menu > li {
   position: relative;
   float: left;
 }
-nav ul > li:hover ul {
+.fade-menu > li:hover ul {
   opacity: 1;
   visibility: visible;
   -webkit-transition-delay: 0s, 0s;
@@ -25,7 +24,7 @@ nav ul > li:hover ul {
   -o-transition-delay: 0s, 0s;
   transition-delay: 0s, 0s;
 }
-nav ul ul {
+.fade-menu ul {
   opacity: 0;
   visibility: hidden;
   z-index: 1;

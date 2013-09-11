@@ -1,4 +1,3 @@
-@charset "utf-8";
 body {
   margin: 0 0 0 50px;
   padding: 0;
@@ -9,28 +8,35 @@ nav {
   height: 45px;
   margin-top: 40px;
 }
-nav ul {
+.fade-menu {
+  float: right;
+}
+ul.fade-menu,
+.fade-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-nav > ul {
-  float: right;
-}
-nav > ul a {
+.fade-menu a {
   color: #000;
   display: block;
   font-size: 13px;
   text-decoration: none;
   font-family: 'Georgia', serif;
 }
-nav > ul > li {
+.fade-menu > li {
   float: left;
   margin: 0 19px;
   padding: 0 1px 19px 0;
   position: relative;
 }
-nav > ul > li:hover ul {
+.fade-menu > li a {
+  -webkit-transition: border .25s;
+  -moz-transition: border .15s;
+  -o-transition: border .25s;
+  transition: border .25s;
+}
+.fade-menu > li:hover ul {
   opacity: 1;
   visibility: visible;
   -webkit-transition-delay: 0s, 0s;
@@ -38,7 +44,7 @@ nav > ul > li:hover ul {
   -o-transition-delay: 0s, 0s;
   transition-delay: 0s, 0s;
 }
-nav > ul ul {
+.fade-menu ul {
   visibility: hidden;
   z-index: 1;
   width: 140px;
@@ -64,19 +70,13 @@ nav > ul ul {
   -o-transition-delay: 0s, .2s;
   transition-delay: 0s, .2s;
 }
-nav > ul ul a {
+.fade-menu ul a {
   padding: 10px 18px;
 }
-nav > ul ul > li:hover {
+.fade-menu ul > li:hover {
   background: #e9e9e9;
 }
-nav > ul ul > li a {
-  -webkit-transition: border .25s;
-  -moz-transition: border .15s;
-  -o-transition: border .25s;
-  transition: border .25s;
-}
-nav > ul ul:before {
+.fade-menu ul:before {
   position: absolute;
   top: -9px;
   left: 55px;
@@ -87,7 +87,7 @@ nav > ul ul:before {
   border-right: 9px solid transparent;
   border-bottom: 9px solid #aaa;
 }
-nav > ul ul:after {
+.fade-menu ul:after {
   position: absolute;
   top: -7px;
   left: 56px;
@@ -98,33 +98,33 @@ nav > ul ul:after {
   border-right: 8px solid transparent;
   border-bottom: 8px solid #fff;
 }
-nav > ul .nav-header-1 {
+.fade-menu .nav-header-1 {
   border-bottom: 3px solid #e03858;
 }
-nav > ul .nav-header-2 {
+.fade-menu .nav-header-2 {
   border-bottom: 0 solid #ef7c28;
 }
-nav > ul .nav-header-3 {
+.fade-menu .nav-header-3 {
   border-bottom: 0 solid #31aa34;
 }
-nav > ul .nav-header-4 {
+.fade-menu .nav-header-4 {
   border-bottom: 0 solid #28a6c6;
 }
-nav > ul .nav-header-5 {
+.fade-menu .nav-header-5 {
   border-bottom: 0 solid #854db5;
 }
-nav > ul > li:hover .nav-header-1 {
+.fade-menu > li:hover .nav-header-1 {
   border-bottom: 3px solid #e03858;
 }
-nav > ul > li:hover .nav-header-2 {
+.fade-menu > li:hover .nav-header-2 {
   border-bottom: 3px solid #ef7c28;
 }
-nav > ul > li:hover .nav-header-3 {
+.fade-menu > li:hover .nav-header-3 {
   border-bottom: 3px solid #31aa34;
 }
-nav > ul > li:hover .nav-header-4 {
+.fade-menu > li:hover .nav-header-4 {
   border-bottom: 3px solid #28a6c6;
 }
-nav > ul > li:hover .nav-header-5 {
+.fade-menu > li:hover .nav-header-5 {
   border-bottom: 3px solid #854db5;
 }
