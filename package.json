@@ -1,0 +1,24 @@
+{
+  "name": "css3-dropdown-with-fade",
+  "version": "2.0.0",
+  "description": "A one-tier dropdown menu built with CSS.",
+  "repository": {
+    "type": "git",
+    "url": "https://jmeas@github.com/jmeas/CSS3-Dropdown-With-Fade.git"
+  },
+  "keywords": [
+    "css",
+    "less",
+    "menu"
+  ],
+  "author": {
+    "name": "Jmeas",
+    "url": "http://www.jmeas.com/"
+  },
+  "license": "Apache",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-less": "~0.7.0"
+  }
+}

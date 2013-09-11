@@ -1,0 +1,46 @@
+/* The body styling isn't really necessary */
+body {
+  margin: 0 0 0 50px;
+  padding: 0;
+  width: 850px;
+}
+/* All of the styling is 'scoped' within the nav ul element */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul a {
+  display: block;
+}
+nav ul > li {
+  position: relative;
+  float: left;
+}
+nav ul > li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0s, 0s;
+  -moz-transition-delay: 0s, 0s;
+  -o-transition-delay: 0s, 0s;
+  transition-delay: 0s, 0s;
+}
+nav ul ul {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  background-color: #fff;
+  -webkit-transition-property: opacity, visibility;
+  -moz-transition-property: opacity, visibility;
+  -o-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: .2s, 0s;
+  -moz-transition-duration: .2s, 0s;
+  -o-transition-duration: .2s, 0s;
+  transition-duration: .2s, 0s;
+  -webkit-transition-delay: 0s, .2s;
+  -moz-transition-delay: 0s, .2s;
+  -o-transition-delay: 0s, .2s;
+  transition-delay: 0s, .2s;
+}

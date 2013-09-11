@@ -1,38 +1,45 @@
 CSS3 Dropdown with Fade
 ========================
+*Version 2.0.0*
 
-In the past, dropdown menus were only possible through Javascript. Nowadays we can use CSS3 to achieve pretty much every traditional dropdown effect.
+This is a one-tier dropdown menu with a fade effect. It was built with the [semantic web][sem] in mind, and happens to be Javascript-free.
 
-This dropdown menu is [semantic][sem] & entirely CSS3.
+For your convenience, I've included two options. There's one with some style and one that's  mostly without style. These are contained in the `styled` and `plain` folders, respectively.
 
-There are two versions in this Git. There's one with style and one that's styleless. These are contained in 'styled-source' and 'plain-source,' respectively.
+The source is available in both LESS and CSS.
 
-[View it live & with styling.][style]
+### [Example with styling][style]
 
-[View it live & without styling.][plain]
+### [Example without styling][plain]
 
 [sem]: http://en.wikipedia.org/wiki/Semantic_Web "Semantic Web"
-[style]: http://jmeas.com/projects/git/dd1/style/menu.html  "CSS3 Dropdown with Fade, Styled"
-[plain]: http://jmeas.com/projects/git/dd1/plain/menu.html  "CSS3 Dropdown with Fade, Plain"
+[style]: http://jmeas.com/github/menu-fade-styled/  "CSS3 Dropdown with Fade, Styled"
+[plain]: http://jmeas.com/github/menu-fade-plain/  "CSS3 Dropdown with Fade, Plain"
+
+*Note: Though this menu can be made to work with IE7+, the above examples will only display properly in IE9+. Read below for more.*
 
 ### Compatibility
 
-This is 100% compatible with Chrome, Safari, Opera, and Firefox. I also optimized it for use on iOS by utilizing the [double-click feature][click].
+As you'd expect, you'll find no issues with this menu in the latest version of all of the major browsers. It was also optimized for use on iOS and the most popular Android phones (it probably works fine on other Android phones &ndash; I just didn't check!).
 
 [click]: http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/ "iOS Double Click"
 
-The styled version will still function on IE6+, but it won't display as nicely as in those other browsers. This is for a few reasons.
+Legacy IE support isn't so bad, either. For < IE9, you'll need to begin by installing the [html5 shim](https://code.google.com/p/html5shim/) to get these early browsers to recognize the `nav` element, or otherwise swap it for something like a `div`. 
 
-Firstly, CSS transitions are only supported in IE10.
+Once you've done either of those, the menu will still *function* as far back as IE7. It just won't display as nicely as it does in modern browsers. This is because CSS transitions are only supported in IE10+. In any earlier IE the menu will simply 'pop' into existence.
 
-Secondly, the CSS3 arrows will only display in IE8+. This is for a few reasons. Firstly, we use a CSS unicode character that I don't think is supported pre-IE8. We also use the ::after pseudoelement to display the triangle; again, IE8+. And we're transforming the arrow, which, yet again, is only IE8+.
+If you'd prefer to have better support on these IEs you will need to turn to Javascript.
 
-If you remove those pesky CSS arrows, it will otherwise display correctly in IE6+ (aside from the transitions).
+### 2.0.0 Notes
 
-And, for the record, the plain version is IE6+ compatible, save the transitions.
+Versions 1.x of this menu used a unicode character for the triangle that sits atop the dropdown items. I added this due to a bug in Firefox, but the bug has since been fixed. Accordingly, I've switched over to using CSS borders for the triangles. This has the effect of making the menu look nicer in IE8. Great!
 
-### Technical details
+### Grunt
 
-In the styled version, I used a unicode character for the triangle instead of CSS borders. You might be wondering why this is. In Firefox, the border hack for CSS triangles displays black bars along the edges of the triangle when it isn't entirely opaque. These aren't there when it's viewed at 1 opacity, so you never notice in typical usage. But, since this has a fade...yeah. You get the picture.
+- `grunt`: Build and lint both the plain and styled menu
+- `grunt plain`: Build and lint the plain menu
+- `grunt styled`: Build and lint the styled menu
+
+*Note: I've turned off the `box-model` rule for linting on the styled source. This is because I've accounted for what it warns against in my code.*
 
 Enjoy!
